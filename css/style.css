@@ -1,5 +1,5 @@
 * {
-  margin: 10px;
+  margin: 0px;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -7,13 +7,17 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
 .padre {
   display: flex;
   flex-flow: column nowrap;
 }
 
 .header {
-  background: url(../img/bg-2.jpg);
+  background: url(../img/bg.jpg);
   background-position: center;
   background-attachment: contain;
   background-size: cover;
@@ -21,27 +25,53 @@ body {
   flex-flow: column nowrap;
 }
 .menu {
-  background: #2d4059;
+  background: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-flow: row nowrap;
-  height: 100px;
+  height: 60px;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .logo {
-  background: #ea5455;
   flex: 1 1 auto;
-  height: 30px;
+}
+.logo a {
+  color: #fff;
+  font-size: 24px;
+}
+.logo a:hover {
+  color: #2f2c2c;
 }
 .nav {
-  background: #ea5455;
   flex: 5 1 auto;
-  height: 30px;
 }
+
+.nav a {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+.nav a:hover {
+  color: #2f2c2c;
+}
+
 .social {
-  background: #ea5455;
   flex: 1 1 auto;
-  height: 30px;
+  display: flex;
 }
+
+.social a {
+  font-size: 18px;
+  color: #fff;
+  padding: 0 5px;
+}
+
+.social a:hover {
+  color: #2f2c2c;
+}
+
 .texto-principal {
   background: #f07b3f;
 }
